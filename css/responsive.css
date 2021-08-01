@@ -1,0 +1,85 @@
+@media (max-width: 991px){
+    .header .nav-toggler{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: 15px;
+    }
+    .header .nav{
+        width: 100%;
+        position: absolute;
+        background-color: var(--dark-700);
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header #nav-check:checked ~ .nav{
+        visibility: visible;
+        opacity: 1;
+    }
+    .header .nav ul li{
+        margin: 0;
+        display: block;
+    }
+    .home-section .home-text h1{
+        font-size: 40px;
+    }
+    .home-section .home-text h1 span::after{
+        bottom: 10px;
+    }
+    .home-section .home-text h2{
+        font-size: 20px;
+    }
+    .courses-section .course-item,
+    .why-us-section .why-us-item{
+        width: calc(50% - 30px);
+    }
+    .footer .footer-item{
+        width: 50%;
+    }
+}
+@media (max-width: 767px){
+    .contact-section .contact-img, 
+    .contact-section .contact-form,
+    .fun-facts-img, 
+    .fun-facts-items,
+    .home-section .home-img,
+    .home-section .home-text{
+        width: 100%;
+    }
+    .contact-section .contact-form,
+    .fun-facts-items,
+    .home-section .home-img{
+        margin-top: 60px;
+    }
+    .home-section .home-text h1{
+        font-size: 35px;
+    }
+    .home-section .home-text h2{
+        font-size: 18px;
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .sec-padding{
+        padding: 70px 0;
+    }
+    .home-section .home-text h1 span::after{
+        bottom: 6px;
+    }
+}
+@media (max-width: 575px){
+    .fun-facts-items .fun-facts-item,
+    .courses-section .course-item,
+    .why-us-section .why-us-item{
+        width: calc(100% - 30px);
+    }
+    .footer .footer-item,
+    .reviews-section .review-item{
+        width: 100%;
+    }
+    .reviews-section .review-item{
+        text-align: center;
+    }
+}
